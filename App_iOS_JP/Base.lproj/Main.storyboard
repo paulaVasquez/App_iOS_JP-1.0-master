@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="App_iOS_JP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOT-Kx-q2c">
+                                <rect key="frame" x="147" y="70" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.41525167226791382" green="0.70841753482818604" blue="0.2301332950592041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Ymb-lS-8DD"/>
+                                </constraints>
+                                <state key="normal" title="FECHAS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p57-xQ-IFO">
+                                <rect key="frame" x="267" y="70" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.41525167226791382" green="0.70841753482818604" blue="0.2301332950592041" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="FAVORITOS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijO-ZC-jJk">
+                                <rect key="frame" x="5" y="70" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.41406834125518799" green="0.70778185129165649" blue="0.22999793291091919" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="8UM-gk-LSG"/>
+                                </constraints>
+                                <state key="normal" title="EVENTOS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultados de Marcadores Finales:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8A-iM-ORn">
+                                <rect key="frame" x="20" y="140" width="316" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7h9-Xn-V3i">
+                                <rect key="frame" x="50" y="205.5" width="314" height="593.5"/>
+                                <color key="backgroundColor" red="0.0020760088439999999" green="0.73112309639999995" blue="0.0032211167430000001" alpha="0.062045162643835611" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0020760088439999999" green="0.73112309639999995" blue="0.0032211167430000001" alpha="0.062045162639999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.0020760088438549163" green="0.73112309644670048" blue="0.0032211167427486013" alpha="0.56172410102739723" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexTrackingBackgroundColor" red="0.0020760088439999999" green="0.73112309639999995" blue="0.0032211167430000001" alpha="0.56172410100000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Z0I-Ph-7py"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="rGj-QZ-RaK"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240.5" placeholderIntrinsicHeight="24" text="COPA AMERICA 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfh-tJ-Xqu">
+                                <rect key="frame" x="87" y="827" width="240.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.6154198589058697" green="0.11354728401234514" blue="0.062671987511484437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gOT-Kx-q2c" firstAttribute="leading" secondItem="ijO-ZC-jJk" secondAttribute="trailing" id="0j9-P9-0st"/>
+                            <constraint firstItem="7h9-Xn-V3i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="3PZ-Jy-vXY"/>
+                            <constraint firstItem="m8A-iM-ORn" firstAttribute="top" secondItem="ijO-ZC-jJk" secondAttribute="bottom" constant="40" id="3sV-Mx-gCJ"/>
+                            <constraint firstItem="7h9-Xn-V3i" firstAttribute="top" secondItem="m8A-iM-ORn" secondAttribute="bottom" constant="40" id="5kz-gS-TTJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cfh-tJ-Xqu" secondAttribute="trailing" constant="86.5" id="7VY-o7-a0f"/>
+                            <constraint firstItem="cfh-tJ-Xqu" firstAttribute="top" secondItem="7h9-Xn-V3i" secondAttribute="bottom" constant="28" id="7jz-1F-J6b"/>
+                            <constraint firstItem="cfh-tJ-Xqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="8Wu-Ph-1BU"/>
+                            <constraint firstItem="ijO-ZC-jJk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="BCi-54-qjc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="p57-xQ-IFO" secondAttribute="trailing" constant="5" id="Dkt-uq-OOJ"/>
+                            <constraint firstItem="ijO-ZC-jJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="G2Z-yX-6pF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cfh-tJ-Xqu" secondAttribute="bottom" constant="11" id="JC6-Vd-dQh"/>
+                            <constraint firstItem="m8A-iM-ORn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RYV-yz-hEY"/>
+                            <constraint firstItem="gOT-Kx-q2c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="XaF-Cm-1nv"/>
+                            <constraint firstItem="p57-xQ-IFO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="jAe-FL-uhH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7h9-Xn-V3i" secondAttribute="trailing" constant="50" id="tLq-TJ-B0f"/>
+                            <constraint firstItem="p57-xQ-IFO" firstAttribute="leading" secondItem="gOT-Kx-q2c" secondAttribute="trailing" id="zlp-qJ-lmX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
