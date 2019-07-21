@@ -27,6 +27,9 @@
                                 <state key="normal" title="FECHAS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wMq-Uj-uov" kind="show" id="o2s-cf-HHP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p57-xQ-IFO">
                                 <rect key="frame" x="267" y="70" width="142" height="30"/>
@@ -34,6 +37,9 @@
                                 <state key="normal" title="FAVORITOS">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="2EK-Vz-lPo" kind="show" id="3HK-b8-9rC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijO-ZC-jJk">
                                 <rect key="frame" x="5" y="70" width="142" height="30"/>
@@ -95,5 +101,146 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="mjH-wz-grv">
+            <objects>
+                <viewController id="2EK-Vz-lPo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Eft-8a-ItU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLF-L5-eLa">
+                                <rect key="frame" x="147" y="70" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.41525167229999999" green="0.70841753480000003" blue="0.2301332951" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="1mh-zY-PTm"/>
+                                </constraints>
+                                <state key="normal" title="FECHAS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wMq-Uj-uov" kind="show" id="UYT-Ue-6Km"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twi-e5-XRA">
+                                <rect key="frame" x="267" y="70" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.41525167229999999" green="0.70841753480000003" blue="0.2301332951" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="FAVORITOS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240.5" placeholderIntrinsicHeight="24" text="COPA AMERICA 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFo-wS-vM9">
+                                <rect key="frame" x="87" y="827" width="240.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.61541985889999995" green="0.113547284" blue="0.062671987509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViK-IZ-LI9">
+                                <rect key="frame" x="5" y="70" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.41406834129999998" green="0.70778185130000004" blue="0.22999793290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="GGK-3n-skw"/>
+                                </constraints>
+                                <state key="normal" title="EVENTOS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="b1k-U1-v3d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Twi-e5-XRA" firstAttribute="leading" secondItem="KLF-L5-eLa" secondAttribute="trailing" id="5wV-cM-Nzx"/>
+                            <constraint firstItem="Twi-e5-XRA" firstAttribute="top" secondItem="P3V-Jd-6zW" secondAttribute="top" constant="26" id="GZx-1b-ryN"/>
+                            <constraint firstItem="KLF-L5-eLa" firstAttribute="leading" secondItem="ViK-IZ-LI9" secondAttribute="trailing" id="Lo0-ap-OQq"/>
+                            <constraint firstItem="P3V-Jd-6zW" firstAttribute="bottom" secondItem="iFo-wS-vM9" secondAttribute="bottom" constant="11" id="NYf-oh-cw2"/>
+                            <constraint firstItem="iFo-wS-vM9" firstAttribute="leading" secondItem="P3V-Jd-6zW" secondAttribute="leading" constant="87" id="gOQ-bT-fnd"/>
+                            <constraint firstItem="ViK-IZ-LI9" firstAttribute="leading" secondItem="P3V-Jd-6zW" secondAttribute="leading" constant="5" id="idV-yH-GSW"/>
+                            <constraint firstItem="ViK-IZ-LI9" firstAttribute="top" secondItem="P3V-Jd-6zW" secondAttribute="top" constant="26" id="jaX-4S-Idr"/>
+                            <constraint firstItem="KLF-L5-eLa" firstAttribute="top" secondItem="P3V-Jd-6zW" secondAttribute="top" constant="26" id="nE2-7A-CXq"/>
+                            <constraint firstItem="P3V-Jd-6zW" firstAttribute="trailing" secondItem="iFo-wS-vM9" secondAttribute="trailing" constant="86.5" id="q8l-17-Zlu"/>
+                            <constraint firstItem="P3V-Jd-6zW" firstAttribute="trailing" secondItem="Twi-e5-XRA" secondAttribute="trailing" constant="5" id="rBG-EN-PPw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P3V-Jd-6zW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGY-dp-Gnt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.1884057971015" y="-77.008928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L31-fC-DjN">
+            <objects>
+                <viewController id="wMq-Uj-uov" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esi-1a-M3q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbm-CM-nRo">
+                                <rect key="frame" x="267" y="70" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.41525167229999999" green="0.70841753480000003" blue="0.2301332951" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="FAVORITOS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2EK-Vz-lPo" kind="show" id="Lly-Y9-mZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" placeholderIntrinsicWidth="142" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeG-2T-p4B">
+                                <rect key="frame" x="5" y="70" width="142" height="30"/>
+                                <color key="backgroundColor" red="0.41406834129999998" green="0.70778185130000004" blue="0.22999793290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="224-Gc-SrB"/>
+                                </constraints>
+                                <state key="normal" title="EVENTOS">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ela-sb-q57"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240.5" placeholderIntrinsicHeight="24" text="COPA AMERICA 2019" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-54-2dF">
+                                <rect key="frame" x="87" y="827" width="240.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.61541985889999995" green="0.113547284" blue="0.062671987509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="120" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrS-Yj-c73">
+                                <rect key="frame" x="147" y="70" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.41525167229999999" green="0.70841753480000003" blue="0.2301332951" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="BFS-1r-8NW"/>
+                                </constraints>
+                                <state key="normal" title="FECHAS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fr6-hD-oNo" firstAttribute="trailing" secondItem="qbm-CM-nRo" secondAttribute="trailing" constant="5" id="C41-C7-Dtx"/>
+                            <constraint firstItem="qbm-CM-nRo" firstAttribute="top" secondItem="fr6-hD-oNo" secondAttribute="top" constant="26" id="EkJ-7g-KP3"/>
+                            <constraint firstItem="oeG-2T-p4B" firstAttribute="leading" secondItem="fr6-hD-oNo" secondAttribute="leading" constant="5" id="IVU-6l-fgJ"/>
+                            <constraint firstItem="Uxg-54-2dF" firstAttribute="leading" secondItem="fr6-hD-oNo" secondAttribute="leading" constant="87" id="MGc-gf-0ft"/>
+                            <constraint firstItem="fr6-hD-oNo" firstAttribute="bottom" secondItem="Uxg-54-2dF" secondAttribute="bottom" constant="11" id="P6W-yr-fOo"/>
+                            <constraint firstItem="oeG-2T-p4B" firstAttribute="top" secondItem="fr6-hD-oNo" secondAttribute="top" constant="26" id="V7a-RK-57E"/>
+                            <constraint firstItem="fr6-hD-oNo" firstAttribute="trailing" secondItem="Uxg-54-2dF" secondAttribute="trailing" constant="86.5" id="Vry-sn-uLh"/>
+                            <constraint firstItem="zrS-Yj-c73" firstAttribute="leading" secondItem="oeG-2T-p4B" secondAttribute="trailing" id="dXC-xZ-cjt"/>
+                            <constraint firstItem="zrS-Yj-c73" firstAttribute="top" secondItem="fr6-hD-oNo" secondAttribute="top" constant="26" id="kGT-9O-g3X"/>
+                            <constraint firstItem="qbm-CM-nRo" firstAttribute="leading" secondItem="zrS-Yj-c73" secondAttribute="trailing" id="nzS-2q-teV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fr6-hD-oNo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nb-m5-qwz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="571"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UYT-Ue-6Km"/>
+        <segue reference="Lly-Y9-mZG"/>
+        <segue reference="b1k-U1-v3d"/>
+    </inferredMetricsTieBreakers>
 </document>
