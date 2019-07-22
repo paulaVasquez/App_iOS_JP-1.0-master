@@ -352,6 +352,7 @@
 			currentVersion = D985E30D22E5620500BEF327 /* db.xcdatamodel */;
 			path = db.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */

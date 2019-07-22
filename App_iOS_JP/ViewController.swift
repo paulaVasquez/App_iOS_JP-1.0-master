@@ -68,6 +68,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.setGradientBackground(colorOne: UIColor.yellow, colorTwo: UIColor(red:0,green:0.4667,blue:0.1216,alpha:1.0))
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scoreCell")
     }
@@ -83,11 +84,38 @@ class ViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "scoreCell")
         //Creamos un objeto task que recuperamos del array tasks
         let scor = score[indexPath.row]
-        //Con KVC obtenemos el contenido del atributo "name" de la task y lo añadimos a nuestra Cell
+        //Con KVC obtenemos el contenido del atributo "score" de la task y lo añadimos a nuestra Cell
         cell!.textLabel!.text = scor.value(forKey: "score") as? String
+        //cell!.imageView!.image = scor.value(forKey: "score") as? UIImage
+
+        //cell!.imageView!.image = UIImage(named: score[indexPath.row])!
+        cell?.setGradientBackground(colorOne: UIColor.yellow, colorTwo: UIColor(red:0,green:0.4667,blue:0.1216,alpha:1.0))
         
+        NSLog("Marcador: %@", score)
         return cell!
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // 1
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let fetchRequest : NSFetchRequest<DBapp> = DBapp.fetchRequest()
+        
+        // 3
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            score = results as [NSManagedObject]
+        } catch let error as NSError {
+            print("No ha sido posible cargar \(error), \(error.userInfo)")
+        }
+        // 4
+        tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

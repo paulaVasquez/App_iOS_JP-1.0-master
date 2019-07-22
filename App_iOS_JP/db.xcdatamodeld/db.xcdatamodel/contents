@@ -4,6 +4,6 @@
         <attribute name="score" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DBapp" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="DBapp" positionX="-63" positionY="-18" width="128" height="58"/>
     </elements>
 </model>
