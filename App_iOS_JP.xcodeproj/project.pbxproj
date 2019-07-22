@@ -13,17 +13,19 @@
 		886EB5F622D93827001EB105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886EB5F422D93827001EB105 /* Main.storyboard */; };
 		886EB5F822D93827001EB105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 886EB5F722D93827001EB105 /* Assets.xcassets */; };
 		886EB5FB22D93827001EB105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886EB5F922D93827001EB105 /* LaunchScreen.storyboard */; };
+		D985E30E22E5620500BEF327 /* db.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D985E30C22E5620500BEF327 /* db.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04E348AA22DA945800EAD5A3 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		886EB5ED22D93827001EB105 /* App_iOS_JP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_iOS_JP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		886EB5F022D93827001EB105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		886EB5F022D93827001EB105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
 		886EB5F222D93827001EB105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		886EB5F522D93827001EB105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		886EB5F722D93827001EB105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		886EB5FA22D93827001EB105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		886EB5FC22D93827001EB105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D985E30D22E5620500BEF327 /* db.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = db.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				886EB5F922D93827001EB105 /* LaunchScreen.storyboard */,
 				886EB5FC22D93827001EB105 /* Info.plist */,
 				04E348AA22DA945800EAD5A3 /* UIView.swift */,
+				D985E30C22E5620500BEF327 /* db.xcdatamodeld */,
 			);
 			path = App_iOS_JP;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				886EB5F322D93827001EB105 /* ViewController.swift in Sources */,
+				D985E30E22E5620500BEF327 /* db.xcdatamodeld in Sources */,
 				04E348AB22DA945800EAD5A3 /* UIView.swift in Sources */,
 				886EB5F122D93827001EB105 /* AppDelegate.swift in Sources */,
 			);
@@ -338,6 +342,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D985E30C22E5620500BEF327 /* db.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D985E30D22E5620500BEF327 /* db.xcdatamodel */,
+			);
+			currentVersion = D985E30D22E5620500BEF327 /* db.xcdatamodel */;
+			path = db.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 886EB5E522D93827001EB105 /* Project object */;
 }

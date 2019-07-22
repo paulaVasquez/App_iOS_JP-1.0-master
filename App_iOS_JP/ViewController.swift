@@ -7,33 +7,89 @@
 //
 
 import UIKit
+import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return teams.count
+var score = [NSManagedObject]()
+
+class ViewController: UIViewController, UITableViewDataSource {
+    
+    @IBAction func addScore(_ sender: Any) {
+        let alert = UIAlertController(title: "Nuevo Marcador",
+                                      message: "Añade un nuevo marcador",
+                                      preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Guardar",
+                                       style: .default,
+                                       handler: { (action:UIAlertAction) -> Void in
+                                        
+                                        let textField = alert.textFields!.first
+                                        self.saveScore(nameScore: textField!.text!)
+                                        self.tableView.reloadData()
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancelar",
+                                         style: .default) { (action: UIAlertAction) -> Void in
+        }
+        
+        alert.addTextField {
+            (textField: UITextField) -> Void in
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        present(alert,
+                animated: true,
+                completion: nil)
+    }
+    func saveScore(nameScore:String){
+        //1
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //2
+        let entity = NSEntityDescription.entity(forEntityName: "DBapp", in: managedContext)
+        let sc = NSManagedObject(entity: entity!, insertInto: managedContext)
+        
+        //3
+        sc.setValue(nameScore, forKey: "score")
+        
+        //4
+        do {
+            try managedContext.save()
+            //5
+            score.append(sc)
+        } catch let error as NSError {
+            print("No ha sido posible guardar \(error), \(error.userInfo)")
+        }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
-        cell.textLabel?.text  = teams[indexPath.row]
-        cell.imageView!.image = UIImage(named: teams[indexPath.row])!
-        cell.setGradientBackground(colorOne: UIColor.yellow, colorTwo: UIColor(red:0,green:0.4667,blue:0.1216,alpha:1.0))
-        return cell
-    }
-    
-    
-    var teams: [String] = []
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        teams = ["Ecuador-Japon 1-1","Chile-Uruguay 0-1","Catar-Argentina 0-2","Colombia-Paraguay 1-0","Peru-Brasil 0-5","Bolivia-Venezuela 1-3","Brasil-Paraguay 0-0", "Venezuela-Argentina 0-2", "Colombia-Chile 0-0", "Uruguay-Peru 0-0", "Brasil-Argentina 2-0", "Chile-Peru 0-3", "Argentina-Chile 2-1", "Brasil-Peru 3-1"]
-    view.setGradientBackground(colorOne: UIColor.yellow, colorTwo: UIColor(red:0,green:0.4667,blue:0.1216,alpha:1.0))
         
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "scoreCell")
     }
     
     
+    func tableView(_ tableView:UITableView, numberOfRowsInSection section:Int) -> Int
+    {
+        return score.count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "scoreCell")
+        //Creamos un objeto task que recuperamos del array tasks
+        let scor = score[indexPath.row]
+        //Con KVC obtenemos el contenido del atributo "name" de la task y lo añadimos a nuestra Cell
+        cell!.textLabel!.text = scor.value(forKey: "score") as? String
+        
+        return cell!
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-}
+        
+    }
 }
