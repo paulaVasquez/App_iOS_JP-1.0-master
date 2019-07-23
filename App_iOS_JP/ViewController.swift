@@ -91,7 +91,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         //cell!.imageView!.image = UIImage(named: score[indexPath.row])!
         cell?.setGradientBackground(colorOne: UIColor.yellow, colorTwo: UIColor(red:0,green:0.4667,blue:0.1216,alpha:1.0))
         
-        NSLog("Marcador: %@", score)
+        //NSLog("Marcador: %@", score)
+        
         return cell!
     }
     
